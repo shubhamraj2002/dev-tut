@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+  <form action="">
+    <!-- in form tag generally we use two tags input in which we enter the type of input which we are going to enter its attributes are text, number, select,password,email,radio,...etc-->
+     <!-- 2nd tag which we generally use are select tag which we use where we have options by using option tag -->
+    <h1>Payment Form</h1>
+    <h2>Contact Information</h2>
+    <p>required fields are followed by *</p>
+    <p>Name: * <input type="text" name="name" required> </p>
+    <fieldset>
+        <legend>Gender*</legend>
+        <p>
+            Male<input type="radio" name="gender" id="male" required> female<input type="radio" name="gender" id="female" required>
+        </p>
+    </fieldset>
+    <p>Address:  <textarea name="address" id="address" cols="50" rows="10"></textarea></p>
+    <p>Email:* <input type="email" id="email" required></p>
+    <p>pincode: <input type="number" name="pincode" id="pincode" required></p>
+
+    <h2>payment Information </h2>
+    <p>card Type: *
+        <select name="card_type" id="card_type" required>
+            <option value="">--select a card Type--</option>
+            <option value="visa">visa</option> 
+            <option value="rupay">rupay</option>
+            <option value="mastercard"> mastercard </option>
+        </select>
+
+    </p>
+    <p>card Number* <input type="number" name="cardn_number" id="card_number" required></p>
+    <p>Expiration date* <input type="data" name="exp_date" id="exp_date" required></p>
+    <p>CVV* <input type="password" name="cvv" id="cvv" required></p>
+    <input type="submit" value="Pay Now">
+    <input type="reset" value="reset now">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.box{
+    border:1px solid black;
+    height:200px;
+    width:150px;
+    background-image:linear-gradient(red,blue);
+    /* background-image:linear-gradient(to right,red,blue); */
+    background-image:linear-gradient(to left,red,blue);
+    background-image:linear-gradient(to top right,red,blue);
+
+    /* agar ek hi id ,class ya tag pe multiple gradient laga ho then only last gradient will be applide   */
+}
+.mydiv{
+    border:1px solid black;
+    height:200px;
+    width:150px;
+    background-image:radial-gradient(red,blue,orange);
+
+}
+
+h1{
+    text-shadow:3px 3px 3px red;
+    /* horizontal length,vertical length, blur length */
+}
+.box_shadow{
+    background-color: aqua;
+    width:200px;
+    height:200px;
+    box-shadow:10px 10px;
+    color:red;
+    /* but if we want to have text in different  color and shadow in different color
+    use 3rd parameter for shadow color */
+}

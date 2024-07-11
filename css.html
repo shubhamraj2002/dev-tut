@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green{ 
+            color:red;
+            font-size: larger;
+        }
+        /* element selector used for a complete tag agar jaha pe bhi agar ye tag use hoga to wo sari property khud pe khud use ho jayega */
+        /* .class_name is used for class selector */
+        /* id selector is unique for each element used as #id_name*/
+        .yellow{
+            color:yellow;
+        }
+
+        .heading{
+            background-color:aqua;
+            /* font-size: large; */
+        }
+        /* when we use multiple tags at a time it is know as multiple selector*/
+        table,tr,td{ 
+            border: 10px solid black;
+            border-collapse: collapse;
+        }
+        /* tr,td
+        {
+            border-collapse: collapse;
+        } */
+
+         /* #selectbutton{ 
+            color:red;
+            font-size: large;
+        } */ 
+
+        /* this hover is pseudo-selector */
+        /* ek baar mai ek tag pe koi ek hi selector kaam krta hai */
+        button:hover{
+            color:red;
+        }
+        #link:hover{
+            color:green;
+        }
+    </style> 
+    <!-- class is used for a group of elements -->
+</head>
+<body>
+    <p class="green">
+        this is my 1st paragraph.
+    </p>
+    <h1 class="heading">
+        this is my 1st heading.
+    </h1>
+    <a href="https://thecodehelp.in" id="link">click here to visit the site</a>
+    <h2 class="heading">
+        this is heading.
+    </h2>
+    <h3 class="heading">
+        this is heading.
+    </h3>
+    <p class="yellow">
+        second para
+    </p>
+    <table>
+        <tr>
+            <td>abcd</td>
+            <td>efgh</td>
+            <td>ijklmn</td>
+        </tr>
+    </table>
+     
+    <br>
+
+    <button id="selectbutton">submit</button>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table homework</title>
+    <style>
+        table,tr,td{
+            text-align: center;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+       
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="1" >
+            <!-- by default value of span is also 1, even though if we don't set value then also it will take 1 -->
+            <!-- if we remove style attribute then color will be white aur iss se styling ab dusre columnn se hoga -->
+            <col span="1" style="background-color: greenyellow">
+            <col span="1" style="background-color:red">
+        </colgroup>
+        <tr>
+            <td rowspan="2">state of health</td>
+            <td colspan="2">Fasting value</td>
+    
+            <td>After Eating</td>
+        </tr>
+        <tr>
+            <td>minimum</td>
+            <td>maximum</td>
+            <td>2 hours after eating</td>
+        </tr>
+        <tr>
+            <td>healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>more than 126</td>
+            <td>N/A</td>
+            <td>more than 200</td>
+        </tr>
+    </table>
+</body>
+</html>
